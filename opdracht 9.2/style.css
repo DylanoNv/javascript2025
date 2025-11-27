@@ -1,0 +1,9 @@
+.emoji {
+    font-size: 100px;
+    cursor: pointer;
+    display: none;
+}
+
+.active {
+    display: block;
+}
