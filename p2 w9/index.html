@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weer app upgrade dylano nietveld 9015493</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Weer-app upgrade w9</h1>
+
+    <div class="row">
+      <input id="cityInput" type="text" placeholder="Typ een stad (bv. Rotterdam)" />
+      <button id="searchBtn">Zoek</button>
+    </div>
+
+    <p id="message" class="message"></p>
+
+    <div id="result" class="result hidden">
+      <h2 id="cityTitle"></h2>
+
+      <div style="display:flex; gap:12px; align-items:center;">
+        <img id="icon" alt="weer icoon" width="60" height="60" />
+        <div>
+          <p><strong>Temperatuur:</strong> <span id="temp"></span> °C</p>
+          <p><strong>Gevoelstemperatuur:</strong> <span id="feels"></span> °C</p>
+          <p><strong>Luchtvochtigheid:</strong> <span id="humidity"></span>%</p>
+          <p><strong>Weer:</strong> <span id="desc"></span></p>
+        </div>
+      </div>
+
+      <p><strong>Wind:</strong> <span id="wind"></span> km/u</p>
+      <p><strong>Zonsopgang:</strong> <span id="sunrise"></span></p>
+      <p><strong>Zonsondergang:</strong> <span id="sunset"></span></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
